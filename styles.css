@@ -6,17 +6,19 @@ body {
 }
 
 header {
-  background: #0f0f10;
-  padding: 140px 20px 120px;
-  text-align: center;
+  padding: 0;
+  margin: 0;
+  background: none;
   color: white;
+  text-align: center;
+  position: relative;
 }
 
 header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
+  padding: 20px 40px;
   font-weight: bold;
 }
 
@@ -61,10 +63,7 @@ header nav ul li a {
   justify-content: center;
   gap: 40px;
   padding: 200px 20px;
-  background: url('mascot-background.png') no-repeat top center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top center;
+  background: none;
   min-height: 100vh;
   position: relative;
   z-index: 1;
@@ -74,8 +73,9 @@ header nav ul li a {
   content: "";
   position: absolute;
   inset: 0;
-  background: inherit;
-  opacity: 0.15; /* adjust transparency */
+  background: url('mascot-background.png') no-repeat top center;
+  background-size: contain;
+  opacity: 0.15;
   z-index: 0;
 }
 
