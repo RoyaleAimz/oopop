@@ -93,9 +93,10 @@ section {
   width: 300px;
   box-shadow: 0 0 15px rgba(128, 0, 255, 0.5);
   transition: 0.3s ease;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+}
+
 }
 
 .card-lite {
