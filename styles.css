@@ -67,8 +67,10 @@ section {
   justify-content: center;
   gap: 40px;
   padding: 200px 20px;
-  background: url('mascot-background.png') no-repeat center center;
-  background-size: cover;
+  background: url('mascot-background.png') no-repeat top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
   min-height: 100vh;
   position: relative;
   z-index: 1;
