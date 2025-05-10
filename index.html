@@ -1,73 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VantaScripts</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VantaScripts - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f10;
+      color: white;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .script-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      background: url('mascot-background.png') no-repeat center center;
+      background-size: cover;
+      padding: 100px 20px;
+    }
+    .card {
+      background: rgba(15, 15, 16, 0.95);
+      border-radius: 12px;
+      padding: 30px;
+      width: 300px;
+      box-shadow: 0 0 15px rgba(128, 0, 255, 0.5);
+      transition: 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(180, 80, 255, 0.7);
+    }
+    footer {
+      background: #111;
+      padding: 50px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      color: #bbb;
+    }
+    .footer-left {
+      max-width: 400px;
+    }
+    .footer-left img {
+      height: 40px;
+      margin-bottom: 20px;
+    }
+    .footer-nav, .footer-info {
+      min-width: 150px;
+    }
+    .footer-nav h4, .footer-info h4 {
+      color: white;
+      margin-bottom: 10px;
+    }
+    .footer-nav ul, .footer-info ul {
+      list-style: none;
+      padding: 0;
+    }
+    .footer-nav li, .footer-info li {
+      margin-bottom: 8px;
+    }
+    .payment-icons {
+      margin-top: 20px;
+      text-align: right;
+    }
+    .payment-icons img {
+      height: 24px;
+      margin-left: 10px;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="logo-container">
-            <img src="assets/vanta-logo.png" alt="VantaScripts Logo">
-            <h1>VantaScripts</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Main</a></li>
-                <li><a href="scripts.html">Scripts</a></li>
-                <li><a href="support.html">Support</a></li>
-                <li>
-                    <select id="language-dropdown">
-                        <option value="en">English</option>
-                        <option value="es">Spanish</option>
-                        <option value="fr">French</option>
-                        <option value="de">German</option>
-                        <option value="jp">Japanese</option>
-                    </select>
-                </li>
-                <li><input type="text" placeholder="Search..." id="search-bar"></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Script Card Section (Mascot Background) -->
+  <section class="script-cards">
+    <div class="card">
+      <h3>Vanta Lite</h3>
+      <p>$4.79 USD</p>
+      <ul>
+        <li>Functions.</li>
+        <li>Performance.</li>
+        <li>Security.</li>
+        <li>Value.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Vanta Script</h3>
+      <p>$12.79 USD</p>
+      <ul>
+        <li>Features.</li>
+        <li>Reliability.</li>
+        <li>Security.</li>
+        <li>Updates.</li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h2>Your Ultimate Rust Scripts Hub</h2>
-            <p>VantaScripts provides optimized and secure scripts, designed for seamless functionality.</p>
-            <img src="assets/mascot-banner.png" alt="Vanta Mascot holding scripts">
-        </div>
-    </section>
+  <!-- Trust Section -->
+  <section>
+    <h2>Why Trust VantaScripts?</h2>
+    <p style="max-width: 700px; margin: 0 auto 40px; color: #ccc;">
+      Don’t waste time or money — we’ve built VantaScripts to deliver secure, reliable scripts that give you results without the risks.
+    </p>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+      <div style="max-width: 250px;">
+        <div style="font-size: 2.5em; margin-bottom: 10px;">🛡️</div>
+        <h3>Reliability</h3>
+        <p>Trusted and tested by the Rust community for performance and stability.</p>
+      </div>
+      <div style="max-width: 250px;">
+        <div style="font-size: 2.5em; margin-bottom: 10px;">🗣️</div>
+        <h3>Transparency</h3>
+        <p>Open support channels and honest responses. Always.</p>
+      </div>
+      <div style="max-width: 250px;">
+        <div style="font-size: 2.5em; margin-bottom: 10px;">💼</div>
+        <h3>Proven Sales</h3>
+        <p>A growing base of loyal users and real, measurable value.</p>
+      </div>
+      <div style="max-width: 250px;">
+        <div style="font-size: 2.5em; margin-bottom: 10px;">🌐</div>
+        <h3>Community Focus</h3>
+        <p>We’re building more than scripts — we’re building a movement.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Featured Scripts -->
-    <section class="scripts-showcase">
-        <div class="script-card">
-            <img src="assets/mascot-lite.png" alt="Lite Script">
-            <h3>Lite</h3>
-            <p>Streamlined performance for Rust gaming.</p>
-            <span class="price">$4.79</span>
-            <button onclick="location.href='lite.html'">View Lite</button>
-        </div>
+  <!-- About Section -->
+  <section>
+    <h2>Welcome to VantaScripts — Scripts That Elevate Your Game</h2>
+    <p style="max-width: 900px; margin: 20px auto; color: #ccc;">
+      VantaScripts is your go-to hub for high-performance game scripts. Whether you're grinding through survival in Rust or looking to stay ahead of your competition, we provide optimized tools designed to boost your edge, enhance control, and improve your experience.
+    </p>
+    <p style="max-width: 900px; margin: 20px auto; color: #ccc;">
+      Our scripts are built for consistency, reliability, and speed — so you can take on every match with confidence.
+    </p>
+    <p style="max-width: 900px; margin: 20px auto; color: #ccc;">
+      Whether you're raiding or defending, VantaScripts is your reliable partner for dominating in Rust.
+    </p>
+    <h3 style="margin-top: 40px;">Why Choose VantaScripts?</h3>
+    <p style="max-width: 800px; margin: 20px auto; color: #ccc;">
+      We’re focused on delivering clean, secure, and powerful tools that work. Whether you're seeking accuracy, control, or just a smoother gameplay experience — Vanta has you covered.
+    </p>
+    <p style="max-width: 800px; margin: 20px auto; color: #ccc;">
+      Our tools are tested and updated constantly to ensure they’re safe, stable, and built to last.
+    </p>
+  </section>
 
-        <div class="script-card">
-            <img src="assets/mascot-vanta.png" alt="VantaScripts">
-            <h3>VantaScripts</h3>
-            <p>Precision-engineered scripts for elite users.</p>
-            <span class="price">$12.79</span>
-            <button onclick="location.href='vantascripts.html'">View VantaScripts</button>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-logo">
-            <img src="assets/vanta-logo.png" alt="VantaScripts Logo">
-        </div>
-        <p>&copy; 2025 VantaScripts - All Rights Reserved.</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-left">
+      <img src="v-logo.png" alt="VantaScripts Logo" />
+      <p>
+        VantaScripts is the trusted source for premium scripts built to enhance your gameplay. From exclusive tools to high-performance features, our library is designed for players who value precision, performance, and clean execution — all at competitive prices.
+      </p>
+      <div>
+        <a href="#"><img src="youtube-icon.png" alt="YouTube" /></a>
+        <a href="#"><img src="telegram-icon.png" alt="Telegram" /></a>
+        <a href="#"><img src="discord-icon.png" alt="Discord" /></a>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <h4>Navigation</h4>
+      <ul>
+        <li>Catalog</li>
+        <li>Blog</li>
+        <li>FAQ</li>
+        <li>Support</li>
+      </ul>
+    </div>
+    <div class="footer-info">
+      <h4>Information</h4>
+      <ul>
+        <li>User Agreement</li>
+        <li>Offer Agreement</li>
+      </ul>
+    </div>
+    <div class="payment-icons">
+      <img src="visa.png" alt="Visa">
+      <img src="mastercard.png" alt="Mastercard">
+      <img src="btc.png" alt="Bitcoin">
+      <img src="paypal.png" alt="PayPal">
+      <img src="b2pay.png" alt="b2pay">
+    </div>
+  </footer>
 
 </body>
 </html>
