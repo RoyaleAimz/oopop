@@ -74,7 +74,15 @@ section {
   min-height: 100vh;
   position: relative;
   z-index: 1;
+}.script-cards::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  opacity: 0.15; /* adjust to fade mascot */
+  z-index: 0;
 }
+
 }
 }
 
