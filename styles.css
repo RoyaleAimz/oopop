@@ -5,6 +5,58 @@ body {
   color: white;
 }
 
+header {
+  background: url('e8edb09f-f4f9-48f3-823b-e573868b100a.png') no-repeat center center;
+  background-size: cover;
+  padding: 140px 20px 120px;
+  text-align: center;
+  color: white;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  font-weight: bold;
+}
+
+header nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-buttons {
+  margin-top: 40px;
+}
+
+.header-buttons a {
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.header-buttons .primary {
+  background: #6c3bff;
+  color: white;
+}
+
+.header-buttons .secondary {
+  background: #2a2a2e;
+  color: white;
+}
+
 section {
   padding: 60px 20px;
   text-align: center;
@@ -15,8 +67,6 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
-  background: url('mascot-background.png') no-repeat center center;
-  background-size: cover;
   padding: 100px 20px;
 }
 
@@ -27,6 +77,17 @@ section {
   width: 300px;
   box-shadow: 0 0 15px rgba(128, 0, 255, 0.5);
   transition: 0.3s ease;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-lite {
+  background-image: url('vanta-lite-bg.png');
+}
+
+.card-script {
+  background-image: url('vanta-script-bg.png');
 }
 
 .card:hover {
