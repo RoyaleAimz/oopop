@@ -34,31 +34,25 @@ header nav ul li a {
 }
 
 .header-buttons {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .header-buttons a {
   text-decoration: none;
-  padding: 12px 24px;
-  border-radius: 30px;
-  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 20px;
+  font-weight: bold;
   margin: 0 10px;
-  display: inline-block;
 }
 
-.header-buttons .primary {
-  background: #6c3bff;
+.header-buttons a:first-child {
+  background: #7b42ff;
   color: white;
 }
 
-.header-buttons .secondary {
-  background: #2a2a2e;
+.header-buttons a:last-child {
+  background: #2b2b2b;
   color: white;
-}
-
-section {
-  padding: 60px 20px;
-  text-align: center;
 }
 
 .script-cards {
@@ -74,16 +68,15 @@ section {
   min-height: 100vh;
   position: relative;
   z-index: 1;
-}.script-cards::before {
+}
+
+.script-cards::before {
   content: "";
   position: absolute;
   inset: 0;
   background: inherit;
-  opacity: 0.15; /* adjust to fade mascot */
+  opacity: 0.15; /* adjust transparency */
   z-index: 0;
-}
-
-}
 }
 
 .card {
@@ -95,16 +88,6 @@ section {
   transition: 0.3s ease;
   position: relative;
   z-index: 2;
-}
-
-}
-
-.card-lite {
-  background-image: url('vanta-lite-bg.png');
-}
-
-.card-script {
-  background-image: url('vanta-script-bg.png');
 }
 
 .card:hover {
@@ -130,25 +113,21 @@ footer {
   margin-bottom: 20px;
 }
 
-.footer-nav,
-.footer-info {
+.footer-nav, .footer-info {
   min-width: 150px;
 }
 
-.footer-nav h4,
-.footer-info h4 {
+.footer-nav h4, .footer-info h4 {
   color: white;
   margin-bottom: 10px;
 }
 
-.footer-nav ul,
-.footer-info ul {
+.footer-nav ul, .footer-info ul {
   list-style: none;
   padding: 0;
 }
 
-.footer-nav li,
-.footer-info li {
+.footer-nav li, .footer-info li {
   margin-bottom: 8px;
 }
 
