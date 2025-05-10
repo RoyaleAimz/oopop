@@ -75,6 +75,7 @@ section {
   position: relative;
   z-index: 1;
 }
+}
 
 .card {
   background: rgba(15, 15, 16, 0.95);
