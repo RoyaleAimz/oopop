@@ -66,9 +66,14 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
-  padding: 100px 20px;
-  background: url('mascot-background.png') no-repeat center center;
-  background-size: cover;
+  padding: 200px 20px;
+  background: url('mascot-background.png') no-repeat top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  min-height: 800px;
+  position: relative;
+  z-index: 1;
 }
 
 .card {
