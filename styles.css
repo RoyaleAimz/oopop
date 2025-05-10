@@ -67,7 +67,7 @@ section {
   justify-content: center;
   gap: 40px;
   padding: 100px 20px;
-  background: url('Rn14jN92E8PC5MEnWEbpKu.png') no-repeat center center;
+  background: url('mascot-background.png') no-repeat center center;
   background-size: cover;
 }
 
@@ -114,21 +114,25 @@ footer {
   margin-bottom: 20px;
 }
 
-.footer-nav, .footer-info {
+.footer-nav,
+.footer-info {
   min-width: 150px;
 }
 
-.footer-nav h4, .footer-info h4 {
+.footer-nav h4,
+.footer-info h4 {
   color: white;
   margin-bottom: 10px;
 }
 
-.footer-nav ul, .footer-info ul {
+.footer-nav ul,
+.footer-info ul {
   list-style: none;
   padding: 0;
 }
 
-.footer-nav li, .footer-info li {
+.footer-nav li,
+.footer-info li {
   margin-bottom: 8px;
 }
 
